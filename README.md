@@ -5,4 +5,5 @@ The first 12 day challenge will be done on first day. Because i know swift and p
 
 Log
 <hr>
+
 day 1 : I complated day 1 and day 2 exercises and reading parts. I learned tuple, set and enums. Enum seems different to me. I am going to try use in future to understand better. 
