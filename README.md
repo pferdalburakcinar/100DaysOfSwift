@@ -5,3 +5,5 @@ Everyday i will complete 2 day progress on hacking with swift. Everyday the prog
 # Log
 
 day 1 : I complated day 1 and day 2 exercises and reading parts. I learned tuple, set and enums. Enum seems different to me. I am going to try use in future to understand better. 
+
+day 2 : I completed day 3 and 4 reading parts. I memorized my information about loops and conditions. I did not learn much thing from this day
