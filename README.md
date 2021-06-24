@@ -11,3 +11,5 @@ day 2 : I completed day 3 and 4 reading parts. I memorized my information about 
 day 3 : I completed until the 15th days. I learned protocols and extensions. I have trouble with closures but while i was making a project, i will understand closure and use it. I already know optinals. I know programming. Because of that i completed 12 lessons in one day
 
 day 4 : I completed day 16 lesson. I created project1 and first was completed. I used uitableview in this project.
+
+day 5 : started
