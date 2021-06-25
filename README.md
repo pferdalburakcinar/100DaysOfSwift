@@ -13,3 +13,5 @@ day 3 : I completed until the 15th days. I learned protocols and extensions. I h
 day 4 : I completed day 16 lesson. I created project1 and first was completed. I used uitableview in this project.
 
 day 5 : Project 1 completed. I learned autulayout ,navigation ,tableView. I am aware importance of tableview. Tableview is easy
+
+day 6 : Project 2 completed. I used navigation bar, button on uibutton sender, Assets and alert dialog.  I made a game which u guess country flag
