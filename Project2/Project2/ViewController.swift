@@ -31,6 +31,8 @@ class ViewController: UIViewController {
         btn1.layer.borderColor = UIColor.lightGray.cgColor
         btn2.layer.borderColor = UIColor.lightGray.cgColor
         btn3.layer.borderColor = UIColor.lightGray.cgColor
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(showScore))
     }
     
     func askQuestion(action: UIAlertAction! = nil) {
@@ -78,6 +80,13 @@ class ViewController: UIViewController {
             answerMessage = "Correct"
         }
         return answerMessage
+    }
+    
+    @objc func showScore() {
+        let ac = UIAlertController(title: "Scorun bu " , message: "\(score)", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Close", style: .default))
+        present(ac, animated: true)
+        
     }
     
 }
