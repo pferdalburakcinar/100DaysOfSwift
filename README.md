@@ -15,3 +15,5 @@ day 4 : I completed day 16 lesson. I created project1 and first was completed. I
 day 5 : Project 1 completed. I learned autulayout ,navigation ,tableView. I am aware importance of tableview. Tableview is easy
 
 day 6 : Project 2 completed. I used navigation bar, button on uibutton sender, Assets and alert dialog.  I made a game which u guess country flag
+
+day 7 : I completed milestone project1 which is on day 23. In 38 days this marathon will end and i will be a ios developer. I learned sharing, adding image in tableview, adding share button in nabigationbar. 
