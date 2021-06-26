@@ -4,7 +4,7 @@ Everyday i will complete 2 day progress on hacking with swift. Everyday the prog
 
 # Log
 
-day 1 : I complated day 1 and day 2 exercises and reading parts. I learned tuple, set and enums. Enum seems different to me. I am going to try use in future to understand better. 
+day 1 : I completed day 1 and day 2 exercises and reading parts. I learned tuple, set and enums. Enum seems different to me. I am going to try use in future to understand better. 
 
 day 2 : I completed day 3 and 4 reading parts. I memorized my information about loops and conditions. I did not learn much thing from this day
 
@@ -17,3 +17,5 @@ day 5 : Project 1 completed. I learned autulayout ,navigation ,tableView. I am a
 day 6 : Project 2 completed. I used navigation bar, button on uibutton sender, Assets and alert dialog.  I made a game which u guess country flag
 
 day 7 : I completed milestone project1 which is on day 23. In 38 days this marathon will end and i will be a ios developer. I learned sharing, adding image in tableview, adding share button in nabigationbar. 
+
+day 7 part 2 : I completed project 4. I learned webview process, uibarbuttonitems, progressview, delegetation( I used delegation but i have some missunderstands) 
