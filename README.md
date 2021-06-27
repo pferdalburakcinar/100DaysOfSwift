@@ -19,3 +19,5 @@ day 6 : Project 2 completed. I used navigation bar, button on uibutton sender, A
 day 7 : I completed milestone project1 which is on day 23. In 38 days this marathon will end and i will be a ios developer. I learned sharing, adding image in tableview, adding share button in nabigationbar. 
 
 day 7 part 2 : I completed project 4. I learned webview process, uibarbuttonitems, progressview, delegetation( I used delegation but i have some missunderstands) 
+
+day 8 : project 5 part 1 and day 27 completed. I have some problem with closures. I read string from txt file with the help of bundle and i used textfield in alert action 
