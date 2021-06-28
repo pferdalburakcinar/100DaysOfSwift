@@ -23,3 +23,5 @@ day 7 part 2 : I completed project 4. I learned webview process, uibarbuttonitem
 day 8 : project 5 part 1 and day 27 completed. I have some problem with closures. I read string from txt file with the help of bundle and i used textfield in alert action 
 
 day 9 : project 5 day 28 and day 29 finished. I learned how to manupulate , reload, insert tableview and used closure. 
+
+day 9 part 2 : project 6 finished. I used autolayout with code. I did not understand very well. I will try to use in the next milestone project
