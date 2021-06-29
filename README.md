@@ -25,3 +25,5 @@ day 8 : project 5 part 1 and day 27 completed. I have some problem with closures
 day 9 : project 5 day 28 and day 29 finished. I learned how to manupulate , reload, insert tableview and used closure. 
 
 day 9 part 2 : project 6 finished. I used autolayout with code. I did not understand very well. I will try to use in the next milestone project
+
+day 10 : MileStoneProject2 completed. I used tableview to make my shoppinglist and i shared it with the help of uiactivityviewcontroller
