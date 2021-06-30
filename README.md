@@ -27,3 +27,5 @@ day 9 : project 5 day 28 and day 29 finished. I learned how to manupulate , relo
 day 9 part 2 : project 6 finished. I used autolayout with code. I did not understand very well. I will try to use in the next milestone project
 
 day 10 : MileStoneProject2 completed. I used tableview to make my shoppinglist and i shared it with the help of uiactivityviewcontroller
+
+day 11 : Project 7 completed.  I used json api and parse it with codeable. I created my petition model and dispay it in tableview. I made an alert action and i take filtering word then i showed only matched words

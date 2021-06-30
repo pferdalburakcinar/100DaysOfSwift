@@ -10,13 +10,16 @@ import UIKit
 class ViewController: UITableViewController {
 
     var petitions = [Petition]()
+    
      
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(alertButtonTapped))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(searchData))
         let urlString: String
-
+        
         if navigationController?.tabBarItem.tag == 0 {
             // urlString = "https://api.whitehouse.gov/v1/petitions.json?limit=100"
             urlString = "https://www.hackingwithswift.com/samples/petitions-1.json"
@@ -27,7 +30,7 @@ class ViewController: UITableViewController {
         if let url = URL(string: urlString) {
             if let data = try? Data(contentsOf: url){
                 parse(json: data)
-                print(petitions[5].signatureCount)
+                print(petitions.count)
                 return
 
             }
@@ -37,6 +40,38 @@ class ViewController: UITableViewController {
     func showError() {
         let ac = UIAlertController(title: "Loading error", message: "There was a problem loading the feed; please check your connection and try again.", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+    }
+    
+    @objc func searchData() {
+        
+        var newPetitions = [Petition]()
+        let ac = UIAlertController(title: "Write Filter", message: nil, preferredStyle: .alert)
+        ac.addTextField()
+        let submitAction = UIAlertAction(title: "Submit", style: .default) {
+            [weak self, weak ac] action in
+            guard let answer = ac?.textFields?[0].text else { return }
+            guard let fakePetitions = self?.petitions else {
+                return
+            }
+            for i in fakePetitions{
+                if i.title.contains(answer){
+                    newPetitions.append(i)
+                }
+            }
+            print(fakePetitions.count)
+            self?.petitions = newPetitions
+            self?.tableView.reloadData()
+        }
+                
+        ac.addAction(submitAction)
+
+        present(ac, animated: true)
+    }
+    
+    @objc func alertButtonTapped() {
+        let ac = UIAlertController(title: "Hello", message: "the data comes from the We The People API of the Whitehouse.", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Ok", style: .default))
         present(ac, animated: true)
     }
     
