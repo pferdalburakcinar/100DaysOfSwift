@@ -29,3 +29,5 @@ day 9 part 2 : project 6 finished. I used autolayout with code. I did not unders
 day 10 : MileStoneProject2 completed. I used tableview to make my shoppinglist and i shared it with the help of uiactivityviewcontroller
 
 day 11 : Project 7 completed.  I used json api and parse it with codeable. I created my petition model and dispay it in tableview. I made an alert action and i take filtering word then i showed only matched words
+
+day 12 : 36 project 8 part 1 completed. I created a game design with programmatically. 
