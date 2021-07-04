@@ -202,8 +202,7 @@ class ViewController: UIViewController {
         level += 1
         solutions.removeAll(keepingCapacity: true)
 
-        loadLevel()
-
+        performSelector(inBackground: #selector(loadLevel) , with: nil)
         for btn in letterButtons {
             btn.isHidden = false
         }
@@ -219,7 +218,7 @@ class ViewController: UIViewController {
         activatedButtons.removeAll()
     }
     
-    func loadLevel() {
+  @objc func loadLevel() {
         var clueString = ""
         var solutionString = ""
         var letterBits = [String]()
@@ -262,6 +261,7 @@ class ViewController: UIViewController {
         
     }
 
+    
 
 }
 

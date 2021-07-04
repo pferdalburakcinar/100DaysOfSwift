@@ -16,6 +16,10 @@ class ViewController: UITableViewController {
         title = "Storm Viewer"
         navigationController?.navigationBar.prefersLargeTitles = true
         
+        performSelector(inBackground: #selector(uploadImages), with: nil)
+    }
+    
+    @objc func uploadImages() {
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
