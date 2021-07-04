@@ -33,3 +33,5 @@ day 11 : Project 7 completed.  I used json api and parse it with codeable. I cre
 day 12 : day 36 project 8 part 1 completed. I created a game design with programmatically. 
 
 day 13 : day 37 project 8 part 2 started
+
+day 14 project 8 completed. I draw gui with programmaticaly. I made a game.  I learned addTarget(), enumerated(), joined(), replacingOccurrences() 

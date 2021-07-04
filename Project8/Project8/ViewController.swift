@@ -92,7 +92,8 @@ class ViewController: UIViewController {
                 let frame = CGRect(x: col * width, y: row * height, width: width, height: height)
                 letterButton.frame = frame
                 letterButton.addTarget(self, action: #selector(letterTapped), for: .touchUpInside)
-
+                letterButton.layer.borderWidth = 1
+                letterButton.layer.borderColor = UIColor.systemGray.cgColor
                 // add it to the buttons view
                 buttonsView.addSubview(letterButton)
 
@@ -175,11 +176,25 @@ class ViewController: UIViewController {
             currentAnswer.text = ""
             score += 1
 
-            if score % 7 == 0 {
+            if ((answersLabel.text?.contains("letters")) == false) {
                 let ac = UIAlertController(title: "Well done!", message: "Are you ready for the next level?", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: levelUp))
                 present(ac, animated: true)
             }
+        } else {
+            let ac = UIAlertController(title: "Wrong", message: "Answer is wrong", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(ac, animated: true)
+            currentAnswer.text = ""
+
+            for btn in activatedButtons {
+                btn.isHidden = false
+            }
+
+            activatedButtons.removeAll()
+            
+            score -= 1
+            print(answersLabel)
         }
     }
     
