@@ -37,3 +37,5 @@ day 13 : day 37 project 8 part 2 started
 day 14 : project 8 completed. I draw gui with programmaticaly. I made a game.  I learned addTarget(), enumerated(), joined(), replacingOccurrences() 
 
 day 14 part 2 : project 9 completed. I used gcd to load data without blocking to screen. I learned gcd, performselector() and quality of service 
+
+day 15 : project 10 part 1 completed  
