@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var score = 0
     var correctAnswer = 0
     var answeredQuestions = 0
-    
+    var highestScore = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,6 +33,11 @@ class ViewController: UIViewController {
         btn3.layer.borderColor = UIColor.lightGray.cgColor
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(showScore))
+        let defaults = UserDefaults.standard
+
+        if let highScore = defaults.object(forKey: "highestScore") as? Int{
+            highestScore = highScore
+        }
     }
     
     func askQuestion(action: UIAlertAction! = nil) {
@@ -50,6 +55,12 @@ class ViewController: UIViewController {
         if sender.tag == correctAnswer{
             score += 1
             title = "Correct your score is: \(score)"
+            if  score > highestScore {
+                title = "Correct. You pass the previous highestScore. Your Score is \(score)"
+                highestScore = score
+                let defaults = UserDefaults.standard
+                defaults.set(highestScore, forKey: "highestScore")
+            }
         }else{
             score -= 1
             title = "Wrong, your score is: \(score)"

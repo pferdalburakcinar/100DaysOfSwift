@@ -14,6 +14,8 @@ class DetailViewController: UIViewController {
     var selectedImage: String?
     var numberOfImages: Int?
     var selectedImagePath: Int?
+    var subtitleArray = [Int]()
+    var index: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,12 @@ class DetailViewController: UIViewController {
         if let imageToLoad = selectedImage{
             imageView.image = UIImage(named: imageToLoad)
         }
+        print(subtitleArray)
+        
+        subtitleArray[index!] += 1
+        print(subtitleArray)
+        let defaults = UserDefaults.standard
+        defaults.set(subtitleArray, forKey: "SavedArray")
     }
     
     override func viewWillAppear(_ animated: Bool) {

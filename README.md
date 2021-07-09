@@ -41,3 +41,5 @@ day 14 part 2 : project 9 completed. I used gcd to load data without blocking to
 day 15 : project 10 part 1 completed  
 
 day 16 : project 10 completed. I learned and used UIImagePickerController, UUID. I am sure the collectionview used a lot in e commerce apps
+
+day 16 part2: project 12 completed. I learned and used UserDefaults. I implemented userdefaults in project 1, project 2 and prorject 5. With the help of UserDefaults, we can save any data in the phone

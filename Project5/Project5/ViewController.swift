@@ -29,6 +29,10 @@ class ViewController: UITableViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(promptForAnswer))
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(startGame))
         
+        let defaults = UserDefaults.standard
+        if let usedWordsArray = defaults.object(forKey:"SavedWords") as? [String]  {
+            usedWords = usedWordsArray
+        }
     }
     
     @objc func startGame() {
@@ -73,6 +77,11 @@ class ViewController: UITableViewController {
 
                     let indexPath = IndexPath(row: 0, section: 0)
                     tableView.insertRows(at: [indexPath], with: .automatic)
+                    let defaults = UserDefaults.standard
+
+                    defaults.set(usedWords, forKey: "SavedWords")
+                   
+
 
                     return
                 } else {
