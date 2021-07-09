@@ -39,3 +39,5 @@ day 14 : project 8 completed. I draw gui with programmaticaly. I made a game.  I
 day 14 part 2 : project 9 completed. I used gcd to load data without blocking to screen. I learned gcd, performselector() and quality of service 
 
 day 15 : project 10 part 1 completed  
+
+day 16 : project 10 completed. I learned and used UIImagePickerController, UUID. I am sure the collectionview used a lot in e commerce apps

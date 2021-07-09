@@ -10,7 +10,6 @@ import UIKit
 class ViewController: UICollectionViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var people = [Person]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,6 +41,35 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let ac = UIAlertController(title: "Delete Or Rename", message: nil, preferredStyle: .alert)
+    
+        let deleteAction = UIAlertAction(title: "Delete", style: .default) { [weak self, weak ac] action in
+                   self?.deleteImage(indexPath: indexPath)
+               }
+        
+        let renameAction = UIAlertAction(title: "Rename", style: .default) { [weak self, weak ac] action in
+                   self?.changeImageName(indexPath: indexPath)
+               }
+        ac.addAction(deleteAction)
+        ac.addAction(renameAction)
+
+        present(ac, animated: true)
+
+
+    }
+    
+    @objc func deleteImage(indexPath: IndexPath) {
+        let person = people[indexPath.item]
+        
+        let ac = UIAlertController(title: "Delete PErson", message: nil, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Ok", style: .default) {[weak self, weak ac] _ in
+            self?.people.remove(at: indexPath.item)
+            self?.collectionView.reloadData()
+        })
+        present(ac, animated: true)
+    }
+   @objc  func changeImageName(indexPath: IndexPath) {
         let person = people[indexPath.item]
         
         let ac = UIAlertController(title: "Rename Person", message: nil, preferredStyle: .alert)
@@ -53,7 +81,6 @@ class ViewController: UICollectionViewController, UIImagePickerControllerDelegat
             self?.collectionView.reloadData()
         })
         present(ac, animated: true)
-
     }
     
     @objc func addNewPerson() {
