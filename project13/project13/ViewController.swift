@@ -18,6 +18,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     var context: CIContext!
     var currentFilter: CIFilter!
     
+    var filterName: String!
+    
+    @IBOutlet weak var intent: UILabel!
+    @IBOutlet weak var changeFilterBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -49,8 +53,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func IntensityChanged(_ sender: Any) {
         applyProcessing()
     }
-    @IBAction func Save(_ sender: Any) {
-    }
+  
     
     @IBAction func changeFilter(_ sender: UIButton) {
         let ac = UIAlertController(title: "Choose filter", message: nil, preferredStyle: .actionSheet)
@@ -68,9 +71,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func setFilter(action: UIAlertAction) {
         // make sure we have a valid image before continuing!
         guard currentImage != nil else { return }
-
+        
         // safely read the alert action's title
         guard let actionTitle = action.title else { return }
+        filterName = actionTitle
+        changeFilterBtn.setTitle(actionTitle, for: .normal)
 
         currentFilter = CIFilter(name: actionTitle)
 
@@ -94,7 +99,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func save(_ sender: Any) {
-        guard let image = imageView.image else { return }
+        guard let image = imageView.image else {
+            let ac = UIAlertController(title: "Image not Found", message: nil, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+            return }
 
         UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }

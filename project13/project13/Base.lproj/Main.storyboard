@@ -93,8 +93,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="mnm-Q9-BiE"/>
                     <connections>
+                        <outlet property="changeFilterBtn" destination="qDu-8w-KJJ" id="qHN-0y-E6C"/>
                         <outlet property="imageView" destination="cTt-Rq-gws" id="Io6-2w-ckk"/>
                         <outlet property="intensity" destination="Ezw-1l-NQ8" id="XKM-0D-J35"/>
+                        <outlet property="intent" destination="nke-cJ-9fx" id="qcP-b7-O0O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -43,3 +43,5 @@ day 15 : project 10 part 1 completed
 day 16 : project 10 completed. I learned and used UIImagePickerController, UUID. I am sure the collectionview used a lot in e commerce apps
 
 day 16 part2: project 12 completed. I learned and used UserDefaults. I implemented userdefaults in project 1, project 2 and prorject 5. With the help of UserDefaults, we can save any data in the phone
+
+day 17 : project 13 completed. I learned coreimage library to manupulate images.
