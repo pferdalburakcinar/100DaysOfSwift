@@ -44,6 +44,9 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ezw-1l-NQ8">
                                 <rect key="frame" x="130" y="724" width="266" height="30"/>
+                                <connections>
+                                    <action selector="IntensityChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="MEh-cl-qBZ"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rC-2B-ad9">
                                 <rect key="frame" x="274" y="798" width="120" height="40"/>
@@ -52,7 +55,7 @@
                                 </constraints>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="Save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqD-LZ-3ep"/>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eui-fG-Okn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDu-8w-KJJ">
