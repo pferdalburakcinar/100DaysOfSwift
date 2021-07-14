@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0BF7DE1269EEF4A008D92BB /* webVikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BF7DE0269EEF4A008D92BB /* webVikiViewController.swift */; };
 		C0CE57B8269C8CB0006E0BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE57B7269C8CB0006E0BD1 /* AppDelegate.swift */; };
 		C0CE57BA269C8CB0006E0BD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE57B9269C8CB0006E0BD1 /* SceneDelegate.swift */; };
 		C0CE57BC269C8CB0006E0BD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CE57BB269C8CB0006E0BD1 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C0BF7DE0269EEF4A008D92BB /* webVikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webVikiViewController.swift; sourceTree = "<group>"; };
 		C0CE57B4269C8CB0006E0BD1 /* Project16.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project16.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0CE57B7269C8CB0006E0BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0CE57B9269C8CB0006E0BD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				C0CE57B7269C8CB0006E0BD1 /* AppDelegate.swift */,
 				C0CE57B9269C8CB0006E0BD1 /* SceneDelegate.swift */,
 				C0CE57BB269C8CB0006E0BD1 /* ViewController.swift */,
+				C0BF7DE0269EEF4A008D92BB /* webVikiViewController.swift */,
 				C0CE57BD269C8CB0006E0BD1 /* Main.storyboard */,
 				C0CE57CC269C8EE5006E0BD1 /* Capital.swift */,
 				C0CE57C0269C8CB1006E0BD1 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				C0CE57B8269C8CB0006E0BD1 /* AppDelegate.swift in Sources */,
 				C0CE57CD269C8EE5006E0BD1 /* Capital.swift in Sources */,
 				C0CE57BA269C8CB0006E0BD1 /* SceneDelegate.swift in Sources */,
+				C0BF7DE1269EEF4A008D92BB /* webVikiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

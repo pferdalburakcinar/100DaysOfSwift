@@ -36,6 +36,21 @@
             </objects>
             <point key="canvasLocation" x="1034.7826086956522" y="128.57142857142856"/>
         </scene>
+        <!--Web Viki View Controller-->
+        <scene sceneID="hgC-uZ-x4I">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="Pxq-bj-We7" customClass="webVikiViewController" customModule="Project16" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Detail" id="NCX-iw-tzh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VmA-WB-fyI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijo-5h-f3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1824" y="125"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="OKt-B5-jtm">
             <objects>

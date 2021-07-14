@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
@@ -21,9 +21,45 @@ class ViewController: UIViewController {
         let washington = Capital(title: "Washington DC", coordinate: CLLocationCoordinate2D(latitude: 38.895111, longitude: -77.036667), info: "Named after George himself.")
         
         mapView.addAnnotations([london, oslo, paris, rome, washington])
+        mapView.mapType = .satellite
+
 
     }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        // 1
+        guard annotation is Capital else { return nil }
+        // 2
+        let identifier = "Capital"
 
+        // 3
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
+        
+       
+        if annotationView == nil {
+            //4
+            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView?.canShowCallout = true
+            annotationView?.pinTintColor = UIColor.systemGray
+            // 5
+            let btn = UIButton(type: .detailDisclosure)
+            annotationView?.rightCalloutAccessoryView = btn
+        } else {
+            // 6
+            annotationView?.annotation = annotation
+        }
+
+        return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        guard let capital = view.annotation as? Capital else { return }
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? webVikiViewController {
+            vc.websiteUrlString = capital.title
+                
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+    }
 
 }
 
