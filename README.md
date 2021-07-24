@@ -47,3 +47,5 @@ day 16 part2: project 12 completed. I learned and used UserDefaults. I implement
 day 17 : project 13 completed. I learned coreimage library to manupulate images.
 
 day 17 part2 : project 15 completed. I learned and used animations
+
+day 19 : project 18 and 19 completed. I completed my journey on 100 days of swift.
